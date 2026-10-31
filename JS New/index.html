@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hesap Makinesi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calculator light-theme" id="calculator">
+
+    <div class="theme-toggle">
+      <label class="switch">
+        <input type="checkbox" id="theme-switch">
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <div class="display">
+      <div class="result" id="result"></div>
+      <div class="expression" id="expression"></div>
+    </div>
+
+    <div class="buttons">
+      <button class="btn action" onclick="Delet()">C</button>
+      <button id="%" class="btn action" onclick="FuritCal(id)">%</button>
+      <button class="btn action" onclick="backspace()">⌫</button>
+      <button id="/" class="btn operator" onclick="FuritCal(id)">/</button>
+
+      <button id ="7" class="btn number" onclick="FuritCal(id)">7</button>
+      <button id="8" class="btn number" onclick="FuritCal(id)">8</button>
+      <button id ="9" class="btn number" onclick="FuritCal(id)">9</button>
+      <button id="*" class="btn operator" onclick="FuritCal(id)"id>×</button>
+
+      <button id="4" class="btn number" onclick="FuritCal(id)">4</button>
+      <button id="5" class="btn number" onclick="FuritCal(id)">5</button>
+      <button id="6" class="btn number" onclick="FuritCal(id)">6</button>
+      <button id="-" class="btn operator" onclick="FuritCal(id)">-</button>
+
+      <button id="1" class="btn number" onclick="FuritCal(id)">1</button>
+      <button id="2" class="btn number" onclick="FuritCal(id)">2</button>
+      <button id="3" class="btn number" onclick="FuritCal(id)">3</button>
+      <button id="+" class="btn operator" onclick="FuritCal(id)">+</button>
+
+      <button id="00" class="btn number" onclick="FuritCal(id)">00</button>
+      <button id="0" class="btn number" onclick="FuritCal(id)">0</button>
+      <button id="." class="btn number" onclick="FuritCal(id)">.</button>
+      <button  class="btn operator equal" onclick="Together()">=</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
